@@ -1,0 +1,91 @@
+.banner-commun {
+    height: 223px;
+    margin-top: 30px;
+    color: var(--colorWhite);
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px rgb(66, 58, 58);
+}
+
+.banner {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/BackgroundHome.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.banner2 {
+    background: url("../Assets/BackgroundFilter.png"), url("../Assets/Background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+
+.banner h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: normal;      /* Permet au texte de revenir à la ligne */
+    word-wrap: break-word;    /* Force le retour à la ligne si nécessaire */
+    text-align: center;       /* Centre le texte horizontalement */
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5rem;
+        text-align: left !important;
+    }
+    .banner, .banner2 {
+        height: 111px;
+        margin-top: 0px;
+        background-position: left;
+    }
+    .banner2, .banner, .banner-commun {
+        border-radius: 10px;
+    }
+}
+
+.title-custom {
+    /* Styles de base pour tous les écrans */
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .title-custom {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      padding-left: 16px !important;
+      line-height: 0.8;
+      width: 100%;
+    }
+    
+    .title-custom::before {
+      content: "Chez vous,";
+      display: block;
+      margin-bottom: 0.2em;
+      text-align: left !important;
+      align-self: flex-start !important;
+      width: 100%;
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+    }
+    
+    .title-custom::after {
+      content: "partout et ailleurs";
+      display: block;
+      text-align: left !important;
+      align-self: flex-start !important;
+      width: 100%;
+    }
+    
+    .title-custom span {
+      display: none;
+    }
+  }

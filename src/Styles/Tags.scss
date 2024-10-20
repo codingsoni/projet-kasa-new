@@ -1,0 +1,40 @@
+.div-tags {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  padding-inline: 20px;
+  padding-bottom: 2px;
+  margin: 10px 20px 0 0;
+  height: 25px;
+  font-size: 14px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .tags {
+      font-size: 10px;
+  }
+
+  .div-tags {
+      gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .tags {
+      margin-right: 10px;
+  }
+
+  .div-tags {
+      gap: 0;
+  }
+}
